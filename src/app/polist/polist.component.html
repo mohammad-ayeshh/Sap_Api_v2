@@ -1,0 +1,23 @@
+<div *ngIf="!data">
+loding...
+</div>
+<div *ngIf="data">
+
+    <h1>Purchase Orders Display</h1>
+    <table>
+      <thead>
+        <tr>
+          <th>Doc Entry</th>         
+          <th>Card Code</th>
+          
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let item of data" (click)="navigateToDetails(item)" >
+          <td> {{ item.DocEntry }}</td>
+          <td>{{ item.CardCode }}</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+  

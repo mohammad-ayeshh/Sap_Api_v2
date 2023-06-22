@@ -1,0 +1,24 @@
+<div *ngIf="!selectedOrder">
+    loding...
+    </div>
+    <div *ngIf="selectedOrder">
+    
+        <h1>Purchase Orders Display</h1>
+        <table>
+          <thead>
+            <tr>
+              <th>ItemCode</th>
+              <th>Quantity</th>
+              <th>UnitPrice</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr *ngFor="let doc of docLine"  >
+              <td> {{ doc.ItemCode }}</td>
+              <td>{{ doc.Quantity }}</td>
+              <td>{{ doc.UnitPrice }}</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      
