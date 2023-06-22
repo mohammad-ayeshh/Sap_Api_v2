@@ -16,6 +16,7 @@ import { POListDtailsComponent } from './polist-dtails/polist-dtails.component';
 import { MatSelectModule } from '@angular/material/select';
 import { ReactiveFormsModule } from '@angular/forms';
 import { MatInputModule } from '@angular/material/input';
+import { ArrayFormComponent } from './array-form/array-form.component';
 
 const appRoute : Routes =[
   {path: '', component: HomeComponent},
@@ -33,7 +34,8 @@ const appRoute : Routes =[
     HomeComponent,
     SendPOComponent,
     POListComponent,
-    POListDtailsComponent
+    POListDtailsComponent,
+    ArrayFormComponent
   ],
   imports: [
     BrowserModule,
